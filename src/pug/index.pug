@@ -1,0 +1,184 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='Full-stack web development for business websites, online stores, booking tools, and API-connected projects.')
+        meta(name='author', content='Yusuf A.')
+        meta(name='theme-color', content='#101b33')
+        title Yusuf A. | Full-Stack Web Developer
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+        // THESIS: A professional freelancer portfolio should feel credible and composed—not loud or template-like.
+        // OWN-WORLD: Deep navy, warm paper, and precise electric blue create a restrained corporate visual system with fine borders and measured depth.
+        // STORY: Clients quickly understand Yusuf's services, inspect honest project records, and move to a clear Freelancer-profile conversation.
+        // FIRST VIEWPORT: A deep-navy hero presents the offer at left and a structured capability panel at right, with two direct actions.
+        // FORM: Executive editorial portfolio; restrained single-page persuasion with staged reveal, subtle lift, and focused borders.
+
+        nav#mainNav.navbar.navbar-expand-lg.fixed-top.site-nav(aria-label='Main navigation')
+            .container
+                a.navbar-brand.brand(href='#page-top', aria-label='Yusuf A., home')
+                    span.brand-mark(aria-hidden='true') Y.
+                    span.brand-name Yusuf A.
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Open navigation')
+                    span.navbar-toggler-label Menu
+                    span.navbar-toggler-icon-custom(aria-hidden='true')
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.align-items-lg-center
+                        li.nav-item
+                            a.nav-link(href='#services') Services
+                        li.nav-item
+                            a.nav-link(href='#work') Work
+                        li.nav-item
+                            a.nav-link(href='#about') About
+                        li.nav-item.nav-contact
+                            a.nav-link.nav-hire(href='https://www.freelancer.com/u/YusufA186', target='_blank', rel='noopener noreferrer') Hire me
+
+        main
+            header#home.hero
+                .container.hero-layout
+                    .hero-copy.reveal
+                        h1.hero-title
+                            | Websites, stores and
+                            br
+                            span.hero-highlight.booking tools
+                            | —built for
+                            span.hero-title-last your business.
+                        p.hero-description
+                            | Practical, thoughtful web development for the way your business works—from a clear first website to a custom web app.
+                        .hero-proof(aria-label='Core development skills')
+                            span HTML &amp; CSS
+                            span JavaScript
+                            span React
+                            span Python / FastAPI
+                        .hero-actions
+                            a.button.button-dark(href='https://www.freelancer.com/u/YusufA186', target='_blank', rel='noopener noreferrer')
+                                | Start a project
+                                span.button-arrow(aria-hidden='true') ↗
+                            a.button.button-outline(href='#work') See selected work
+                    figure.hero-signs.reveal(aria-label='Business web development capabilities')
+                        img.hero-visual(src='assets/img/hero-workspace.svg', alt='Illustration of a website, an online storefront and a booking dashboard')
+                        .sign-card.sign-card-main
+                            span.sign-card-label 01 / Web presence
+                            strong.sign-card-title Business websites
+                            span.sign-card-note Clear, credible, and easy to use
+                        .sign-card.sign-card-shop
+                            span.sign-card-label 02 / Commerce
+                            strong.sign-card-title Online stores
+                            span.sign-card-note Built around your products and offer
+                        .sign-card.sign-card-booking
+                            span.sign-card-label 03 / Operations
+                            strong.sign-card-title Booking tools
+                            span.sign-card-note A clearer path from inquiry to appointment
+
+            section#services.section.services-section(aria-labelledby='services-title')
+                .container
+                    .section-heading.services-heading.reveal
+                        h2#services-title A website should do more than look good.
+                        p.lead-copy Tell me what your business needs to do online. We can build from there.
+                    .service-list
+                        article.service-row.reveal
+                            span.service-tag.service-tag-blue Business websites
+                            div
+                                h3 A clear, capable home for your business
+                                p Introduce what you do, answer common questions, and make the next step easy to find.
+                        article.service-row.reveal
+                            span.service-tag.service-tag-yellow E-commerce
+                            div
+                                h3 An online storefront for your products
+                                p Present your range and create a smooth path from browsing to buying.
+                        article.service-row.reveal
+                            span.service-tag.service-tag-pink Booking websites
+                            div
+                                h3 Service and appointment booking sites
+                                p Let customers explore your services and request a time, whether you run a salon, barbershop, or another appointment-led business.
+                        article.service-row.reveal
+                            span.service-tag.service-tag-orange Web applications
+                            div
+                                h3 Interfaces that connect to your tools
+                                p Build with JavaScript, React, and Python/FastAPI when a project needs more than a static page.
+                        article.service-row.reveal
+                            span.service-tag.service-tag-green Existing projects
+                            div
+                                h3 Improve what you already have
+                                p Refine a website, add a feature, or help turn an existing project into a more complete experience.
+
+            section#work.section.work-section(aria-labelledby='work-title')
+                .container
+                    .section-heading.work-heading.reveal
+                        h2#work-title A few things I’ve built.
+                        p.lead-copy Three different projects, each with its own purpose and stage of development.
+                    .project-grid
+                        article.project-card.reveal
+                            .project-art.project-art-shopflix
+                                span.project-art-note Storefront prototype
+                                img.project-visual(src='assets/img/project-shopflix.svg', alt='Illustrative fashion storefront artwork')
+                                strong.project-art-title ShopFlix
+                            .project-copy
+                                p.project-category Fashion & lifestyle storefront
+                                h3 ShopFlix
+                                p A fashion and lifestyle storefront prototype made with HTML, CSS, and vanilla JavaScript.
+                                p.project-caveat Prototype only: checkout, accounts, newsletter delivery, and inventory are not connected. The source template’s license is unspecified.
+                                .project-links
+                                    a.text-link(href='https://github.com/YusufArri/ShopFlix', target='_blank', rel='noopener noreferrer') View repository
+                                        span(aria-hidden='true') ↗
+                                    span.project-stack HTML · CSS · JavaScript
+                        article.project-card.reveal
+                            .project-art.project-art-circle
+                                span.project-art-note Community website
+                                img.project-visual(src='assets/img/project-community.svg', alt='Illustrative community service artwork')
+                                strong.project-art-title Circle of Friends
+                            .project-copy
+                                p.project-category Community organization
+                                h3 Circle of Friends Upliftment Centre
+                                p A website for the Circle of Friends Upliftment Centre.
+                                .project-links
+                                    a.text-link(href='https://github.com/circleoffriendsuc-droid/circle-of-friends-website', target='_blank', rel='noopener noreferrer') View repository
+                                        span(aria-hidden='true') ↗
+                        article.project-card.reveal
+                            .project-art.project-art-pinned
+                                span.project-art-note Portfolio demo
+                                img.project-visual(src='assets/img/project-pinned.svg', alt='Illustrative pinboard dashboard artwork')
+                                strong.project-art-title Pinned!
+                            .project-copy
+                                p.project-category Full-stack application demo
+                                h3 Pinned!
+                                p A portfolio demo with a React/Vite frontend and a Python/FastAPI backend. It is a demo, not a production service.
+                                .project-links
+                                    span.project-stack React · Vite · FastAPI
+
+            section#about.section.about-section(aria-labelledby='about-title')
+                .container.about-layout
+                    h2#about-title Thoughtful code. A good fit for your business.
+                    .about-copy.reveal
+                        p I’m Yusuf, a full-stack web developer. I build websites and web applications that help businesses present their services, products, or ideas online.
+                        p My work includes HTML, CSS, JavaScript, React/Vite, and Python/FastAPI. I also work with GitHub and Netlify.
+                        p Each project has different needs. If you have an existing site or a new idea, share what you’re trying to make possible.
+                        .skills-list(aria-label='Development skills')
+                            span HTML
+                            span CSS
+                            span JavaScript
+                            span React
+                            span Python
+                            span FastAPI
+
+            section#contact.section.contact-section(aria-labelledby='contact-title')
+                .container.contact-layout
+                    div
+                        h2#contact-title Have a project in mind?
+                        p Tell me what you need your website or web app to do. We can start with a conversation.
+                    a.button.button-yellow(href='https://www.freelancer.com/u/YusufA186', target='_blank', rel='noopener noreferrer')
+                        | Start a conversation
+                        span.button-arrow(aria-hidden='true') ↗
+
+        footer.site-footer
+            .container.footer-layout
+                a.footer-brand(href='#page-top') Yusuf A.
+                p Full-Stack Web Developer
+                a.footer-link(href='https://www.freelancer.com/u/YusufA186', target='_blank', rel='noopener noreferrer') Freelancer profile
+                small © 2026 Yusuf A.
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+        script(src='js/scripts.js')

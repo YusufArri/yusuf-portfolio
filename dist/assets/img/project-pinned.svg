@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 380" role="img" aria-labelledby="title">
+  <title id="title">Illustrative pinboard application dashboard</title>
+  <rect width="620" height="380" fill="#f3f0e7"/>
+  <rect x="44" y="44" width="532" height="292" rx="16" fill="#ffffff" stroke="#d7deea" stroke-width="3"/>
+  <rect x="44" y="44" width="532" height="54" rx="16" fill="#14213d"/>
+  <circle cx="78" cy="71" r="8" fill="#c99a38"/>
+  <rect x="98" y="64" width="112" height="14" rx="7" fill="#ffffff"/>
+  <rect x="76" y="124" width="132" height="180" rx="10" fill="#edf1f8"/>
+  <rect x="228" y="124" width="316" height="72" rx="10" fill="#dce5ff"/>
+  <rect x="228" y="214" width="148" height="90" rx="10" fill="#fff4df"/>
+  <rect x="396" y="214" width="148" height="90" rx="10" fill="#eaf4f2"/>
+  <rect x="100" y="148" width="84" height="12" rx="6" fill="#61708a"/>
+  <rect x="100" y="176" width="84" height="12" rx="6" fill="#61708a"/>
+  <rect x="100" y="204" width="84" height="12" rx="6" fill="#61708a"/>
+  <circle cx="278" cy="160" r="20" fill="#315efb"/>
+  <rect x="312" y="148" width="196" height="12" rx="6" fill="#14213d"/>
+  <rect x="312" y="172" width="154" height="8" rx="4" fill="#61708a"/>
+  <circle cx="302" cy="248" r="14" fill="#c99a38"/>
+  <circle cx="470" cy="248" r="14" fill="#315efb"/>
+</svg>

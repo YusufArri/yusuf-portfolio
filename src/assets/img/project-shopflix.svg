@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 380" role="img" aria-labelledby="title">
+  <title id="title">Illustrative fashion storefront</title>
+  <rect width="620" height="380" fill="#edf1f8"/>
+  <rect x="44" y="44" width="532" height="292" rx="16" fill="#ffffff" stroke="#d7deea" stroke-width="3"/>
+  <rect x="44" y="44" width="532" height="56" rx="16" fill="#14213d"/>
+  <rect x="44" y="84" width="532" height="16" fill="#14213d"/>
+  <rect x="78" y="67" width="92" height="12" rx="6" fill="#ffffff"/>
+  <rect x="438" y="67" width="74" height="12" rx="6" fill="#b9c7ff"/>
+  <rect x="78" y="128" width="148" height="174" rx="10" fill="#f5c9bb"/>
+  <rect x="244" y="128" width="148" height="174" rx="10" fill="#dfe6f5"/>
+  <rect x="410" y="128" width="132" height="174" rx="10" fill="#e2eee9"/>
+  <circle cx="152" cy="198" r="42" fill="#ffffff"/>
+  <path d="M130 200c10-26 34-26 44 0v56h-44z" fill="#315efb"/>
+  <rect cx="318" y="166" width="82" height="82" rx="8" fill="#c99a38"/>
+  <rect x="278" y="166" width="82" height="82" rx="8" fill="#c99a38"/>
+  <path d="M318 166v82M278 207h82" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="476" cy="196" r="44" fill="#ffffff"/>
+  <path d="M454 224l22-78 22 78" fill="#14213d"/>
+  <rect x="78" y="314" width="148" height="10" rx="5" fill="#61708a"/>
+  <rect x="244" y="314" width="148" height="10" rx="5" fill="#61708a"/>
+  <rect x="410" y="314" width="132" height="10" rx="5" fill="#61708a"/>
+</svg>

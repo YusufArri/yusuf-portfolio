@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-26T15:37:35+02:00",
+  "title": "Design System: Yusuf A. Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "warm-navy": {
+        "role": "primary",
+        "displayName": "Warm Navy",
+        "canonical": "#14213d",
+        "tonalRamp": ["#0b1224", "#101a30", "#14213d", "#1d2a45", "#394960", "#61708a", "#9ba7ba", "#dce2ec"]
+      },
+      "deep-navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#101c34",
+        "tonalRamp": ["#080f1d", "#0d172a", "#101c34", "#1b2d50", "#3b4e70", "#61708a", "#9ca8ba", "#dce2ec"]
+      },
+      "soft-navy": {
+        "role": "neutral",
+        "displayName": "Soft Navy",
+        "canonical": "#1d2a45",
+        "tonalRamp": ["#0d1423", "#152039", "#1d2a45", "#2e3e60", "#4d5c78", "#758198", "#a9b2c1", "#dde2ea"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#fbfaf7",
+        "tonalRamp": ["#625f58", "#817e76", "#a29f96", "#bfbbb2", "#d6d3cb", "#e8e6df", "#f3f1ec", "#fbfaf7"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#6f6f6f", "#888888", "#a3a3a3", "#bdbdbd", "#d7d7d7", "#e7e7e7", "#f3f3f3", "#ffffff"]
+      },
+      "electric-blue": {
+        "role": "primary",
+        "displayName": "Electric Blue",
+        "canonical": "#315efb",
+        "tonalRamp": ["#162a78", "#1e3999", "#234bc9", "#315efb", "#5578ff", "#809af8", "#b3c1f5", "#dce5ff"]
+      },
+      "radial-blue": {
+        "role": "secondary",
+        "displayName": "Radial Blue",
+        "canonical": "#5578ff",
+        "tonalRamp": ["#1a2f78", "#24439b", "#315bd1", "#5578ff", "#738efa", "#99aaf6", "#bdc7f7", "#dfe5fb"]
+      },
+      "blue-light": {
+        "role": "secondary",
+        "displayName": "Blue Light",
+        "canonical": "#dce5ff",
+        "tonalRamp": ["#3f4e7e", "#59699a", "#7284b8", "#91a1c8", "#abb9d9", "#c4cfea", "#d5def5", "#dce5ff"]
+      },
+      "slate": {
+        "role": "neutral",
+        "displayName": "Cool Slate",
+        "canonical": "#61708a",
+        "tonalRamp": ["#252d3a", "#3a4659", "#61708a", "#7f8ba1", "#9da7b7", "#bcc3cf", "#d9dde5", "#edf0f4"]
+      },
+      "fine-line": {
+        "role": "neutral",
+        "displayName": "Fine Line",
+        "canonical": "#d7deea",
+        "tonalRamp": ["#536073", "#6f7b90", "#8e99ab", "#aab3c2", "#c1c8d4", "#d0d6e1", "#d7deea", "#edf0f5"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Executive Display",
+        "purpose": "Hero headlines and the largest opening statement."
+      },
+      "headline": {
+        "displayName": "Editorial Headline",
+        "purpose": "Section, about, and contact headings."
+      },
+      "title": {
+        "displayName": "Compact Title",
+        "purpose": "Service and project titles."
+      },
+      "body": {
+        "displayName": "Professional Body",
+        "purpose": "Descriptions, caveats, and explanatory copy."
+      },
+      "label": {
+        "displayName": "Utility Label",
+        "purpose": "Tags, metadata, capability labels, and navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "nav-shrunk",
+        "value": "0 8px 24px rgb(16 27 51 / 8%)",
+        "purpose": "Separate the compact fixed navigation state."
+      },
+      {
+        "name": "primary-action",
+        "value": "0 10px 24px rgb(49 94 251 / 20%)",
+        "purpose": "Give the primary action measured blue depth."
+      },
+      {
+        "name": "primary-hover",
+        "value": "0 13px 28px rgb(49 94 251 / 30%)",
+        "purpose": "Increase the primary action lift on hover."
+      },
+      {
+        "name": "card-rest",
+        "value": "0 10px 28px rgb(16 27 51 / 6%)",
+        "purpose": "Separate project cards at rest."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 18px 38px rgb(16 27 51 / 12%)",
+        "purpose": "Emphasize project cards on hover or focus-within."
+      }
+    ],
+    "motion": [
+      {
+        "name": "interaction",
+        "value": "180ms ease-out",
+        "purpose": "Buttons, navigation, service rows, and skill-label state changes."
+      },
+      {
+        "name": "capability",
+        "value": "220ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Capability-card and card lift transitions."
+      },
+      {
+        "name": "reveal",
+        "value": "620ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Staged entrance of revealed content."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "992px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "small",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A confident electric-blue action for the main conversion path.",
+      "html": "<button class=\"ds-btn-primary\">Start a project <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-btn-primary { display:inline-flex; min-height:53.6px; align-items:center; justify-content:center; gap:.8rem; padding:.75rem 1.05rem; color:#ffffff; background:#315efb; border:1px solid #315efb; border-radius:.25rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.92rem; font-weight:800; line-height:1.2; text-decoration:none; box-shadow:0 10px 24px rgb(49 94 251 / 20%); transition:transform 180ms ease-out,box-shadow 180ms ease-out,background-color 180ms ease-out,border-color 180ms ease-out; } .ds-btn-primary:hover { transform:translateY(-3px); background:#234be1; border-color:#234be1; box-shadow:0 13px 28px rgb(49 94 251 / 30%); } .ds-btn-primary:focus-visible { outline:3px solid #5578ff; outline-offset:4px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "A restrained reversed-outline action for the warm-navy hero.",
+      "html": "<button class=\"ds-btn-outline\">See selected work</button>",
+      "css": ".ds-btn-outline { display:inline-flex; min-height:53.6px; align-items:center; justify-content:center; gap:.8rem; padding:.75rem 1.05rem; color:#ffffff; background:rgb(255 255 255 / 3%); border:1px solid rgb(255 255 255 / 35%); border-radius:.25rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.92rem; font-weight:800; line-height:1.2; transition:transform 180ms ease-out,background-color 180ms ease-out,border-color 180ms ease-out; } .ds-btn-outline:hover { transform:translateY(-3px); color:#14213d; background:#ffffff; border-color:#ffffff; } .ds-btn-outline:focus-visible { outline:3px solid #5578ff; outline-offset:4px; }"
+    },
+    {
+      "name": "Paper Button",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "The final contact action on the white contact field.",
+      "html": "<button class=\"ds-btn-paper\">Start a conversation <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-btn-paper { display:inline-flex; min-height:53.6px; align-items:center; justify-content:center; gap:.8rem; padding:.75rem 1.05rem; color:#14213d; background:#ffffff; border:1px solid #ffffff; border-radius:.25rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.92rem; font-weight:800; line-height:1.2; transition:transform 180ms ease-out,background-color 180ms ease-out,border-color 180ms ease-out; } .ds-btn-paper:hover { transform:translateY(-3px); background:#dce5ff; border-color:#dce5ff; } .ds-btn-paper:focus-visible { outline:3px solid #315efb; outline-offset:4px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "A fixed translucent wordmark strip with precise active and Hire states.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example\"><a class=\"ds-brand\"><span class=\"ds-brand-mark\">Y.</span><strong>Yusuf A.</strong></a><div class=\"ds-nav-links\"><a>Services</a><a>Work</a><a class=\"ds-nav-hire\">Hire me</a></div></nav>",
+      "css": ".ds-nav { min-height:80px; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.7rem 1rem; color:#14213d; background:rgb(248 250 252 / 96%); border-bottom:1px solid #d7deea; backdrop-filter:blur(10px); } .ds-brand { display:inline-flex; align-items:center; gap:.7rem; font-size:1.05rem; } .ds-brand-mark { display:grid; width:2.35rem; height:2.35rem; place-items:center; color:#fff; background:#14213d; border:1px solid #14213d; border-radius:.25rem; font-size:.9rem; } .ds-nav-links { display:flex; align-items:center; gap:.15rem; } .ds-nav-links a { padding:.7rem .85rem; color:#1d2a45; font-size:.9rem; font-weight:800; } .ds-nav-links a:hover { color:#315efb; } .ds-nav-links .ds-nav-hire { color:#fff; background:#14213d; border:1px solid #14213d; border-radius:.25rem; } .ds-nav-links .ds-nav-hire:hover { background:#315efb; border-color:#315efb; }"
+    },
+    {
+      "name": "Capability Card",
+      "kind": "custom",
+      "refersTo": "capability-card",
+      "description": "A fine-bordered capability row in the warm-navy hero.",
+      "html": "<article class=\"ds-capability\"><span class=\"ds-capability-label\">01 / Web presence</span><div><strong>Business websites</strong><span>Clear, credible, and easy to use</span></div></article>",
+      "css": ".ds-capability { display:grid; grid-template-columns:5.8rem minmax(0,1fr); align-items:center; min-height:7.75rem; padding:1.15rem 1.25rem; color:#fff; background:rgb(255 255 255 / 5%); border:1px solid rgb(185 199 255 / 24%); border-radius:.35rem; transition:transform 220ms cubic-bezier(.16,1,.3,1),border-color 220ms ease-out,background-color 220ms ease-out; } .ds-capability:hover { transform:translateX(-8px); background:rgb(255 255 255 / 7%); border-color:rgb(185 199 255 / 70%); } .ds-capability-label { align-self:start; color:#b9c7ff; font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; } .ds-capability div { display:grid; } .ds-capability strong { font-size:1.65rem; letter-spacing:-.025em; } .ds-capability div span { margin-top:.35rem; color:#dfe5f1; font-size:.82rem; }"
+    },
+    {
+      "name": "Hero Skill Chip",
+      "kind": "chip",
+      "refersTo": "skill-label",
+      "description": "A visible first-viewport chip for proven technical skills.",
+      "html": "<span class=\"ds-hero-skill\">HTML / CSS</span>",
+      "css": ".ds-hero-skill { display:inline-block; padding:.38rem .58rem; color:#edf2ff; background:rgb(255 255 255 / 6%); border:1px solid rgb(185 199 255 / 24%); border-radius:.2rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.76rem; font-weight:800; }"
+    },
+    {
+      "name": "Service Tag",
+      "kind": "chip",
+      "refersTo": "service-tag",
+      "description": "A compact scan label for a service category.",
+      "html": "<span class=\"ds-service-tag\">Business websites</span>",
+      "css": ".ds-service-tag { display:inline-block; padding:.42rem .65rem; color:#14213d; background:#fbfaf7; border:1px solid #d7deea; border-radius:.2rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.78rem; font-weight:800; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "An evidence-first project card with a typographic illustration.",
+      "html": "<article class=\"ds-project\"><div class=\"ds-project-art\"><span>Storefront prototype</span><strong>ShopFlix</strong><svg viewBox=\"0 0 220 90\" aria-label=\"Original storefront illustration\" role=\"img\"><rect x=\"14\" y=\"8\" width=\"192\" height=\"72\" rx=\"4\" fill=\"#f7f9ff\" stroke=\"#315efb\"/><rect x=\"28\" y=\"22\" width=\"56\" height=\"44\" rx=\"3\" fill=\"#dce5ff\"/><rect x=\"96\" y=\"22\" width=\"96\" height=\"44\" rx=\"3\" fill=\"#fff\"/><path d=\"M96 44h96M144 22v44\" stroke=\"#315efb\"/><circle cx=\"47\" cy=\"44\" r=\"10\" fill=\"#5578ff\"/></svg></div><div class=\"ds-project-copy\"><p>Fashion &amp; lifestyle storefront</p><h3>ShopFlix</h3><p>A fashion and lifestyle storefront prototype made with HTML, CSS, and vanilla JavaScript.</p></div></article>",
+      "css": ".ds-project { display:flex; width:min(100%,24rem); min-width:0; flex-direction:column; color:#14213d; background:#fff; border:1px solid #d7deea; border-radius:.35rem; box-shadow:0 10px 28px rgb(16 27 51 / 6%); transition:transform 220ms cubic-bezier(.16,1,.3,1),border-color 220ms ease-out,box-shadow 220ms ease-out; } .ds-project:hover,.ds-project:focus-within { transform:translateY(-8px); border-color:#91a5ed; box-shadow:0 18px 38px rgb(16 27 51 / 12%); } .ds-project-art { position:relative; display:flex; min-height:13rem; flex-direction:column; justify-content:center; padding:1.35rem; background:#e8edf9; border-bottom:1px solid #d7deea; border-radius:.35rem .35rem 0 0; } .ds-project-art span { align-self:flex-start; padding:.3rem .48rem; background:rgb(255 255 255 / 84%); border:1px solid #d7deea; border-radius:.2rem; font-size:.72rem; font-weight:800; text-transform:uppercase; } .ds-project-art strong { max-width:10ch; margin-top:.9rem; font-size:3rem; letter-spacing:-.05em; line-height:.98; } .ds-project-art svg { width:100%; margin-top:.75rem; } .ds-project-copy { display:flex; flex:1; flex-direction:column; padding:1.35rem; } .ds-project-copy p { color:#61708a; } .ds-project-copy p:first-child { color:#315efb; font-size:.72rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; } .ds-project-copy h3 { margin:.65rem 0; font-size:1.35rem; letter-spacing:-.03em; }"
+    },
+    {
+      "name": "Skill Label",
+      "kind": "chip",
+      "refersTo": "skill-label",
+      "description": "A compact neutral label used in the navy About field.",
+      "html": "<span class=\"ds-skill\">FastAPI</span>",
+      "css": ".ds-skill { display:inline-block; padding:.42rem .65rem; color:#fff; background:rgb(255 255 255 / 6%); border:1px solid rgb(255 255 255 / 18%); border-radius:.2rem; font-family:\"Trebuchet MS\",\"Segoe UI\",Arial,sans-serif; font-size:.82rem; font-weight:700; transition:transform 180ms ease-out,border-color 180ms ease-out; } .ds-skill:hover { transform:translateY(-3px); border-color:#b9c7ff; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Welcoming Executive Portfolio",
+    "overview": "The system presents Yusuf A. as a composed, credible, and approachable full-stack freelancer. Warm navy establishes authority, warm paper keeps the page human, and electric blue supplies precise moments of action and wayfinding. Subtle radial blue warmth behind the opening prevents the corporate structure from feeling stark, while strong editorial hierarchy, fine borders, measured depth, and short explanatory copy keep it professional.\n\nThe portfolio puts proven skills and completed job types immediately in view. The hero lead is paired with visible HTML/CSS, JavaScript, React, and Python/FastAPI chips and a structured capability panel. The portfolio uses a staged reveal and subtle horizontal or vertical lifts to maintain momentum without turning the interface into a playful display. Imagery remains typographic and symbolic because suitable project screenshots are not available; project status and caveats stay explicit.",
+    "keyCharacteristics": [
+      "Warm-navy editorial hero with subtle blue radial warmth and warm-white content areas",
+      "Hero skills and completed capability types visible in the first viewport",
+      "Electric-blue action, links, and focused wayfinding",
+      "Fine 1px borders and restrained 0.2–0.35rem radii",
+      "Elevated cards and hover lift that communicate interaction",
+      "Evidence-first project records and a direct Freelancer-profile path"
+    ],
+    "rules": [
+      {
+        "name": "The Evidence-First Color Rule",
+        "body": "Color must organize hierarchy and action; it must not imply a project outcome, review, integration, or unverified status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readable Authority Rule",
+        "body": "Headlines remain bold and spacious, but never become oversized decoration. Skills and completed job types stay visible in the opening, while explanatory copy remains compact, practical, and limited to clear line lengths.",
+        "section": "typography"
+      },
+      {
+        "name": "The Proof-Then-Action Rule",
+        "body": "The narrative moves from the offer, to service categories, to three honest project records, to Yusuf's profile and skills, and finally to a direct Freelancer conversation.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lift-Only Rule",
+        "body": "Shadows appear only on controls, cards, and the compact navigation state; neutral containers remain flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Fine-Border Rule",
+        "body": "Use borders to define hierarchy and state; do not compensate with heavy outlines or excessive corner radius.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do lead with a warm-navy hero and a bold, approachable business offer.",
+      "Do use original SVG artwork for project illustrations instead of generic theme imagery or claimed screenshots.",
+      "Do use electric blue sparingly for actions, active states, categories, and wayfinding.",
+      "Do keep borders at 1px, radii at 0.2–0.35rem, and shadows restrained.",
+      "Do use staged 620ms reveal motion with the existing 18px translate and honor reduced-motion settings.",
+      "Do preserve the verified ShopFlix and Circle repositories and the Freelancer-profile contact route.",
+      "Do label ShopFlix as a prototype and Pinned! as a demo."
+    ],
+    "donts": [
+      "Don't restore shop-window language, sun-yellow fields, hand-painted signs, or condensed poster typography.",
+      "Don't add saturated decorative accents or use color to imply outcomes that are not evidenced.",
+      "Don't round surfaces into pills or apply glossy gradients and ambient card depth.",
+      "Don't invent reviews, testimonials, platform ratings, production integrations, or project screenshots.",
+      "Don't link Pinned! to the unavailable GitHub URL or present it as a production service."
+    ]
+  }
+}
